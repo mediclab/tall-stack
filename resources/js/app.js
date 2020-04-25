@@ -1,3 +1,2 @@
-import 'alpinejs';
-
+require('alpinejs');
 require('./bootstrap');
