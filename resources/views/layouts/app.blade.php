@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title', 'Default') - {{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
@@ -15,6 +15,13 @@
 </head>
 <body>
 <div id="app">
+    @section('navbar')
+        @include('layouts.include.navbar')
+    @show
+    @section('header')
+        @include('layouts.include.header')
+    @show
+    
     @yield('content')
 </div>
 

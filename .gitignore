@@ -9,9 +9,12 @@
 /storage/*.key
 /vendor
 .idea/
+.vscode/
 .env
 .env.backup
 .phpunit.result.cache
+.phpstorm.meta.php
+_ide_helper.php
 auth.json
 Homestead.json
 Homestead.yaml
